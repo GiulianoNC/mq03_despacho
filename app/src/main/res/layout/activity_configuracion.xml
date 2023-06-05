@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundImg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".configuracion">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxLector"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Lector"
+        android:textColor="@color/colorQuantum"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLector"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_borde4"
+        android:button="@drawable/image_checkbox"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textSize="1sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/QTMtitulo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="QTM - DESPACHO DE MATERIALES"
+        android:textColor="@color/colorQuantum"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        style="@style/srcQuantumBackground"
+        android:layout_width="112dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="17dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_borde"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="http:"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#C3C0C0"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/depo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="DEPÓSITO"
+        android:textColor="@color/colorQuantum"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/depo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/textView28"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_borde"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Depósito"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="#C3C0C0"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/custom_button"
+        android:onClick="guardar"
+        android:text="guardar"
+        android:textSize="12sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/direccion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="DIRECCION"
+        android:textColor="@color/colorQuantum"
+        android:textSize="15sp" />
+
+</RelativeLayout>
